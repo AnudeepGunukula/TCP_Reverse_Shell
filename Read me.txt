@@ -1,3 +1,5 @@
+In VICTIM PC:
+
 first put our script safely at nonvisible location
 and create bat file that runs our script
 
